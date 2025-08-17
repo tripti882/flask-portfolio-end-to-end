@@ -1,0 +1,6 @@
+{
+  "languages": ["Dart", "PHP", "JavaScript", "Java"],
+  "frameworks": ["Flutter", "Node.js", "Express.js", "Docker"],
+  "cloud": ["AWS EC2", "S3", "Lambda", "RDS", "Firebase"],
+  "databases": ["MySQL", "PL/SQL", "MongoDB"]
+}

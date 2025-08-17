@@ -1,0 +1,16 @@
+[
+  {
+    "name": "FMT App Schedule & Course Manager",
+    "description": "Cross-platform education app enabling students to access live, recorded, and upcoming sessions.",
+    "technologies": ["Flutter", "Node.js", "PHP", "AWS", "Razorpay", "Firebase"],
+    "github": "https://github.com/samjha1/fmt-app",
+    "demo": "https://play.google.com/store/apps/details?id=fmt.app"
+  },
+  {
+    "name": "FMT Partner App Class & Profile Management",
+    "description": "Admin app for faculty to manage schedules, student data, and attendance.",
+    "technologies": ["Flutter", "Node.js", "AWS", "Firebase", "QR Scanner"],
+    "github": "https://github.com/samjha1/fmt-partner",
+    "demo": null
+  }
+]
