@@ -10,7 +10,31 @@
     "name": "FMT Partner App Class & Profile Management",
     "description": "Admin app for faculty to manage schedules, student data, and attendance.",
     "technologies": ["Flutter", "Node.js", "AWS", "Firebase", "QR Scanner"],
-    "github": "https://github.com/samjha1/fmt-partner",
-    "demo": null
+    "github": "https://github.com/samjha1/fmt-partner"
+  },
+  {
+    "name": "jarvis-A.I",
+    "description": "A Python-based AI assistant project.",
+    "technologies": ["Python"],
+    "github": "https://github.com/samjha1/jarvis-A.I"
+  },
+  {
+    "name": "Predicting-User-Behaviour-In-Online-Shopping-Sites",
+    "description": "A project to predict user behavior on e-commerce platforms.",
+    "technologies": ["JavaScript"],
+    "github": "https://github.com/samjha1/Predicting-User-Behaviour-In-Online-Shopping-Sites"
+  },
+  {
+    "name": "durga",
+    "description": "Dart-based application project.",
+    "technologies": ["Dart"],
+    "github": "https://github.com/samjha1/durga"
+  },
+  {
+    "name": "task",
+    "description": "Task management app built with Dart.",
+    "technologies": ["Dart"],
+    "github": "https://github.com/samjha1/task"
   }
+
 ]

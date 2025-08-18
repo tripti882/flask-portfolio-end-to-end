@@ -12,8 +12,12 @@
     <!-- Navbar -->
     <nav class="bg-white shadow-md fixed w-full top-0 z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="/" class="text-xl font-bold text-blue-600">Shivam jha</a>
-            <div class="space-x-6">
+            
+            <!-- Logo / Name -->
+            <a href="/" class="text-xl font-bold text-blue-600">Shivam Jha</a>
+            
+            <!-- Links -->
+            <div class="flex items-center space-x-6">
                 <a href="/" class="hover:text-blue-600">Home</a>
                 <a href="/about" class="hover:text-blue-600">About</a>
                 <a href="/projects" class="hover:text-blue-600">Projects</a>
@@ -22,15 +26,20 @@
         </div>
     </nav>
 
+    <!-- Hero Section with Profile Image -->
+    <section class="pt-28 pb-10 text-center">
+        <img src="{{ url_for('static', filename='images/profileimage.jpg') }}" 
+            alt="Profile photo of Shivam Jha"
+             class="w-40 h-40 mx-auto rounded-full border-4 border-blue-500 shadow-lg object-cover">
+        <h1 class="mt-4 text-3xl font-bold text-gray-900">Shivam Jha</h1>
+        <p class="text-gray-600">Software Developer • Tech Enthusiast • Lifelong Learner</p>
+    </section>
+
     <!-- Page Content -->
-    <main class="pt-20 container mx-auto px-6">
+    <main class="container mx-auto px-6">
         {% block content %}{% endblock %}
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white mt-10 py-6 text-center">
-        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
-    </footer>
-
 </body>
 </html>
