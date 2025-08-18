@@ -26,5 +26,4 @@ Backend: Flask (Python)
 
 Frontend: Jinja2 Templates + Tailwind CSS
 
-Data Storage: JSON files (projects.json, messages.json, skills.json)
 
