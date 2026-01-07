@@ -1,170 +1,198 @@
-# 🚀 Flask Portfolio – End-to-End Production Deployment
+🚀 Flask Portfolio – End-to-End Backend & Cloud Project
 
-A **production-ready personal portfolio web application** built using **Flask**, styled with **Tailwind CSS**, and deployed on **AWS EC2** using **Nginx + Gunicorn**.
+A full-stack Flask portfolio web application designed, developed, and deployed on AWS EC2 using production-grade backend practices.
 
-This project demonstrates **real-world backend development practices** including cloud deployment, environment configuration, database integration, and scalable architecture — not just a basic Flask demo.
+This project goes beyond a static portfolio and demonstrates real-world backend development, including authentication, data persistence, structured routing, and Linux server deployment.
 
----
+🌐 Live Deployment
 
-## 🌐 Live Deployment
+Hosted on: AWS EC2 (Ubuntu)
 
-* **Hosted on:** AWS EC2 (Ubuntu)
-* **Web Server:** Nginx
-* **WSGI Server:** Gunicorn
-* **Backend Framework:** Flask
+Web Server: Nginx
 
----
+WSGI Server: Gunicorn
 
-## 📌 Key Features
+Backend Framework: Flask
 
-### 🏠 Home Page
+🎯 Project Objective
 
-* Clean landing page with professional introduction
-* Fully responsive UI using Tailwind CSS
+To build and deploy a job-ready Flask application that demonstrates:
 
-### 👤 About Page
+Backend fundamentals
 
-* Brief profile summary
-* Skills and background displayed dynamically
+Server-side rendering
 
-### 💻 Projects Page
+Data handling
 
-* Dynamically loads project data
-* Structured for scalability (migrated from JSON to database-ready design)
+Authentication flow
 
-### 📬 Contact Page
+Cloud deployment experience
 
-* User contact form with validation
-* Messages stored securely on the backend
+📌 Core Features
+🏠 Home Page
 
-### ✅ Thank You Page
+Professional landing page
 
-* Confirmation page after successful form submission
+Clean UI with Tailwind CSS
 
-### 🎨 Responsive Design
+Template inheritance using base.html
 
-* Mobile-first design using Tailwind CSS
-* Optimized for desktop, tablet, and mobile devices
+👤 About Page
 
----
+Dynamic profile and skills rendering
 
-## 🛠️ Tech Stack
+Data-driven design using JSON
 
-### Backend
+💻 Projects Page
 
-* **Python**
-* **Flask**
-* **Gunicorn** (WSGI server)
+Projects loaded dynamically from projects.json
 
-### Frontend
+Easy to scale or migrate to a database
 
-* **HTML5**
-* **Tailwind CSS**
-* **Jinja2 Templates**
+📬 Contact Form
 
-### Database & Storage
+User contact form with validation
 
-* JSON-based storage (initial version)
-* Structured to migrate to **SQLite / PostgreSQL** using SQLAlchemy
+Messages stored persistently (messages.json)
 
-### Cloud & Deployment
+Thank-you confirmation page after submission
 
-* **AWS EC2 (Ubuntu)**
-* **Nginx** (Reverse Proxy)
-* **Linux Server Configuration**
-* **Git & GitHub** for version control
+🔐 Authentication System
 
----
+User Signup & Login
 
-## 🏗️ Architecture Overview
+Credentials stored in SQLite database
 
-```
+Foundation for admin/dashboard features
+
+🗄️ Database Integration
+
+SQLite database (users.db)
+
+SQLAlchemy models defined in models.py
+
+Database initialization using create_db.py
+
+🏗️ Application Architecture
 User
  ↓
 Browser
  ↓
-Nginx (Reverse Proxy)
+Flask Routes
  ↓
-Gunicorn (WSGI)
+Templates (Jinja2)
  ↓
-Flask Application
- ↓
-Data Storage (JSON / Database)
-```
+Data Layer (SQLite / JSON)
 
----
+🛠️ Tech Stack
+Backend
 
-## 🔐 Security & Best Practices
+Python
 
-* Environment variables for sensitive data
-* Flask production server setup (Gunicorn)
-* Reverse proxy with Nginx
-* Separation of frontend and backend logic
-* Clean project structure for scalability
+Flask
 
----
+SQLAlchemy
 
-## 📂 Project Structure
+SQLite
 
-```
-flask-portfolio/
+Frontend
+
+HTML5
+
+Tailwind CSS
+
+Jinja2 Templates
+
+Data Storage
+
+JSON (projects, skills, messages)
+
+SQLite (users & authentication)
+
+Cloud & DevOps
+
+AWS EC2 (Ubuntu Linux)
+
+Linux server configuration
+
+Git & GitHub
+
+📂 Project Structure
+flask-portfolio-end-to-end/
 │
-├── app.py
-├── requirements.txt
+├── app/
+│   ├── routes/
+│   ├── models.py
+│   ├── create_db.py
+│   └── __init__.py
+│
 ├── templates/
-│   ├── home.html
+│   ├── base.html
+│   ├── index.html
 │   ├── about.html
 │   ├── projects.html
 │   ├── contact.html
-│   └── thank_you.html
+│   ├── login.html
+│   ├── signup.html
+│   └── thankyou.html
 │
 ├── static/
-│   ├── css/
-│   └── assets/
+│   └── images/
 │
 ├── data/
 │   ├── projects.json
+│   ├── skills.json
 │   └── messages.json
 │
+├── users.db
+├── app.py
+├── requirements.txt
 └── README.md
-```
 
----
+🚀 Deployment Highlights
 
-## 🚀 Deployment Highlights
+Flask application deployed on AWS EC2
 
-* Configured and deployed Flask app on **AWS EC2**
-* Integrated **Nginx + Gunicorn** for production readiness
-* Enabled persistent background service for the application
-* Tested application end-to-end after deployment
+Linux-based server environment
 
----
+Application tested after deployment
 
-## 📈 Future Enhancements
+Real production experience (not local-only)
 
-* Migrate JSON storage to **PostgreSQL (RDS)**
-* Add **Admin Dashboard** to manage contact messages
-* Enable **HTTPS (SSL)** using Let’s Encrypt
-* CI/CD pipeline using **GitHub Actions**
-* Dockerize the application
+🔐 Security & Best Practices
 
----
+Modular route structure
 
-## 👩‍💻 Author
+Separation of concerns (routes, models, templates)
 
-**Tripti**
+Database-backed authentication
+
+Scalable project structure
+
+Ready for migration to PostgreSQL / RDS
+
+📈 Future Enhancements
+
+Replace JSON storage with PostgreSQL (RDS)
+
+Admin dashboard for managing messages
+
+HTTPS using SSL certificates
+
+CI/CD pipeline with GitHub Actions
+
+Docker containerization
+
+👩‍💻 Author
+
+Tripti
 B.Sc Computer Science Student
 Aspiring Backend / Cloud Engineer
 
----
+⭐ Why This Project Stands Out
 
-## ⭐ Why This Project Matters
-
-This project showcases:
-
-* Real-world Flask backend development
-* Cloud deployment experience
-* Production-grade server configuration
-* Clean, scalable project design
-
-👉 Built to demonstrate **job-ready backend and cloud skills**, not just academic concepts.
+✔ Backend-focused Flask application
+✔ Authentication + database integration
+✔ Cloud deployment on AWS EC2
+✔ Clean, scalable structure
+✔ Built with job readiness, not just academics, in mind
